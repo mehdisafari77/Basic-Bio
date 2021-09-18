@@ -20,7 +20,7 @@ section{
 }
 .max-width{
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 60px;
     margin: auto;
 }
 section .title{
@@ -51,6 +51,15 @@ section .title::after{
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
+}
+.about{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* navbar styling */
@@ -101,6 +110,7 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+
 /* home section styling */
 .home {
     display: flex;
@@ -147,6 +157,56 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
+    color: var(--green);
+    background: none;
+}
+
+/* about section styling */
+/* .about {
+    display: flex;
+    height: 20vh;
+    min-height: 500px;
+    background-size: 60%;
+} */
+.about .title::after{
+    content: "who am i";
+}
+.about .about-content .left{
+    width: 30%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: var(--green);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--green);
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
     color: var(--green);
     background: none;
 }
