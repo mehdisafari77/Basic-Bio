@@ -162,14 +162,8 @@ section .title::after{
 }
 
 /* about section styling */
-/* .about {
-    display: flex;
-    height: 20vh;
-    min-height: 500px;
-    background-size: 60%;
-} */
 .about .title::after{
-    content: "who am i";
+    content: "Who Am I?";
 }
 .about .about-content .left{
     width: 30%;
@@ -209,4 +203,49 @@ section .title::after{
 .about .about-content .right a:hover{
     color: var(--green);
     background: none;
+}
+
+/* services section styling */
+.portfolio{
+    color:#fff;
+    background: #111;
+}
+.portfolio .title::before{
+    background: #fff;
+}
+.portfolio .title::after{
+    background: #111;
+    content: "What I've Done";
+}
+.portfolio .port-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px;
+}
+.portfolio .port-content .card:hover{
+    background: var(--green);
+}
+.portfolio .port-content .card .box{
+    transition: all 0.3s ease;
+}
+.portfolio .port-content .card:hover .box{
+    transform: scale(1.05);
+}
+.portfolio .port-content .card i{
+    font-size: 50px;
+    color: var(--green);
+    transition: color 0.3s ease;
+}
+.portfolio .port-content .card:hover i{
+    color: #fff;
+}
+.portfolio .port-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
