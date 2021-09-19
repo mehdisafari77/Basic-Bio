@@ -55,15 +55,22 @@ section .title::after{
 .about, .portfolio, .skills, .contact{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
-.services .serv-content,
+
 .skills .skills-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+.about .about-content,
+.portfolio .port-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
 
+}
+   
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -221,7 +228,7 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
+/* portfolio section styling */
 .portfolio{
     color:#fff;
     background: #111;
@@ -238,27 +245,21 @@ section .title::after{
     background: #222;
     text-align: center;
     border-radius: 6px;
+    border: 2px dashed #fff;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: 20px;
+    margin: 10px;
 }
 .portfolio .port-content .card:hover{
     background: var(--green);
+    transform: rotate(10deg);
 }
 .portfolio .port-content .card .box{
     transition: all 0.3s ease;
 }
 .portfolio .port-content .card:hover .box{
     transform: scale(1.05);
-}
-.portfolio .port-content .card i{
-    font-size: 50px;
-    color: var(--green);
-    transition: color 0.3s ease;
-}
-.portfolio .port-content .card:hover i{
-    color: #fff;
 }
 .portfolio .port-content .card .text{
     font-size: 25px;
