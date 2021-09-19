@@ -55,18 +55,13 @@ section .title::after{
 .about, .portfolio, .skills, .contact{
     font-family: 'Poppins', sans-serif;
 }
+.about .about-content,
 .services .serv-content,
 .skills .skills-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}
-.about{
-    display: flex;
-    /* flex-wrap: wrap; */
-    /* align-items: left;
-    justify-content: left; */
 }
 
 /* navbar styling */
@@ -182,12 +177,12 @@ section .title::after{
 .about .title::after{
     content: "Who Am I?";
 }
-.about .title {
+/* .about .title {
     display: flex;
     flex-direction: left;
-}
+} */
 .about .about-content .left{
-    width: 30%;
+    width: 45%;
 }
 .about .about-content .left img{
     height: 400px;
@@ -447,4 +442,19 @@ section .title::after{
 .right form .button-area button:hover{
   color: var(--green);
   background: none;
+}
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: var(--green);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
 }
