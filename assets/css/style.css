@@ -70,7 +70,8 @@ section .title::after{
     transform: translateX(-50%);
 }
 .skills .skills-content, 
-.contact .contact-content{
+.contact .contact-content,
+.portfolio .port-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -83,16 +84,6 @@ section .title::after{
     justify-content: space-between;
 
 }
-.portfolio .port-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-/* .card {
-    display: inline;
-} */
    
 /* navbar styling */
 .navbar{
@@ -150,7 +141,7 @@ section .title::after{
     height: 50vh;
     color: #fff;
     min-height: 500px;
-    background-size: 60%;
+    background-size: 75%;
     font-family: 'ubuntu', sans-serif;
 }
 .home img{
@@ -505,10 +496,6 @@ footer span a:hover{
         border-radius: 6px;
         margin-right: 20px;
     }
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
     .navbar .menu{
         position: fixed;
         height: 100vh;
@@ -555,10 +542,6 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    /* .portfolio .port-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    } */
     .portfolio .port-content .card{
         width: 100%;
     }
@@ -623,13 +606,5 @@ footer span a:hover{
     }
     .right form .error-box{
        width: 150px;
-    }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
     }
 }
