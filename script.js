@@ -8,6 +8,7 @@ $(document).ready(function(){
         }
     });
 });
+
  // typing text animation script
  var typed = new Typed(".typing", {
     strings: ["IOS Developer", "Web-Developer", "Student"],

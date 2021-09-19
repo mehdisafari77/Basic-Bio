@@ -14,6 +14,20 @@ html{
     --green: rgb(96, 240, 120);
 }
 
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /* all similar content styling codes */
 section{
     padding: 100px 0;
@@ -22,6 +36,9 @@ section{
     max-width: 2000px;
     padding: 0 60px;
     margin: auto;
+}
+.about, .portfolio, .skills, .contact, footer{
+    font-family: 'Poppins', sans-serif;
 }
 section .title{
     position: relative;
@@ -52,23 +69,26 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-.about, .portfolio, .skills, .contact{
-    font-family: 'Poppins', sans-serif;
-}
-
-.skills .skills-content, .contact .contact-content{
+.skills .skills-content, 
+.contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.about .about-content,
-.portfolio .port-content {
+.about .about-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
+}
+.portfolio .port-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: evenly;
 }
    
 /* navbar styling */
@@ -86,10 +106,10 @@ section .title::after{
 }
 .navbar .max-width{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 .navbar .logo a{
     color: #fff;
@@ -447,9 +467,9 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #111;
+    background: #fff;
     padding: 15px 23px;
-    color: #fff;
+    color: #111;
     text-align: center;
 }
 footer span a{
