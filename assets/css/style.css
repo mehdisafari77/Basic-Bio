@@ -496,7 +496,43 @@ footer span a:hover{
         border-radius: 6px;
         margin-right: 20px;
     }
-    .navbar .menu{
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        padding: 30px 0;
+        font-family: 'Ubuntu', sans-serif;
+        transition: all 0.3s ease;
+    }
+    /* .navbar .menu{
+        position: fixed;
+        height: 40vh;
+        width: 15vw;
+        left: 80%;
+        top: 0;
+        background: rgba(255, 255, 255, 0.329);
+        text-align: center;
+        padding-top: 50px;
+        transition: all 0.3s ease;
+    } */
+    .navbar .menu li{
+        list-style: none;
+        display: inline-block;
+    }
+    .navbar .menu li a{
+        display: block;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+    }
+    .navbar .max-width{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* .navbar .menu{
         position: fixed;
         height: 50vh;
         width: 15vw;
@@ -504,7 +540,7 @@ footer span a:hover{
         top: 0;
         background: rgba(255, 255, 255, 0.329);
         text-align: center;
-        padding-top: 50px;
+        padding-top: 80px;
         transition: all 0.3s ease;
     }
     .navbar .menu li{
@@ -515,7 +551,7 @@ footer span a:hover{
         display: inline-block;
         margin: 20px 0;
         font-size: 20px;
-    }
+    } */
     .home .home-content .text-2{
         font-size: 65px;
     }
@@ -550,6 +586,26 @@ footer span a:hover{
     }
 }
 @media (max-width: 690px) {
+    .navbar .menu{
+        position: fixed;
+        height: 40vh;
+        width: 15vw;
+        left: 80%;
+        top: 0;
+        background: rgba(255, 255, 255, 0.329);
+        text-align: center;
+        padding-top: 50px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu li{
+        display: inline;
+    }
+    .navbar .menu li a{
+        color: var(--green);
+        
+        margin: 20px 0;
+        font-size: 19px;
+    }
     .home img {
         /* display: none; */
         height: 200px;
@@ -575,6 +631,26 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
+    .navbar .menu{
+        position: fixed;
+        height: 40vh;
+        width: 20vw;
+        left: 10;
+        top: 0;
+        background: rgba(255, 255, 255, 0.329);
+        text-align: center;
+        padding-top: 60px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu li{
+        display: inline;
+    }
+    .navbar .menu li a{
+        color: var(--green);
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 18px;
+    }
     .home img {
         /* display: none; */
         height: 100px;
