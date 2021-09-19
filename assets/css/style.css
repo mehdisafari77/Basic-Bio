@@ -151,7 +151,7 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 50%;
     margin-right: 50px;
 
 }
@@ -584,6 +584,7 @@ footer span a:hover{
 /* responsive media query start */
 @media (max-width: 1104px) {
     .home img{
+        border-radius: 50%;
         height: 350px;
         width: 350px;
     }
@@ -599,7 +600,7 @@ footer span a:hover{
         height: 300px;
         width: 300px;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 50%;
         margin-right: 20px;
     }
     .navbar .menu{
@@ -660,7 +661,7 @@ footer span a:hover{
         height: 200px;
         width: 200px;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 50%;
         margin-right: 20px;
     }
     .max-width{
@@ -685,7 +686,7 @@ footer span a:hover{
         height: 100px;
         width: 100px;
         object-fit: cover;
-        border-radius: 6px;
+        border-radius: 50%;
         margin-right: 10px;
     }
     .home .home-content .text-2{
