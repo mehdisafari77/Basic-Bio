@@ -29,6 +29,9 @@ html{
 }
 
 /* all similar content styling codes */
+button {
+    font-family: 'Poppins', sans-serif;
+}
 section{
     padding: 100px 0;
 }
@@ -127,12 +130,12 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-/* .navbar .menu li a:hover{
+.navbar .menu li a:hover{
     color: var(--green);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
-} */
+}
 
 /* home section styling */
 .home {
@@ -193,7 +196,11 @@ section .title::after{
 }
 
 /* about section styling */
+.about{
+    background: linear-gradient(315deg, #ffffff 15%, #d7ecdf 84%);
+}
 .about .title::after{
+    background: linear-gradient(315deg, #ffffff 0%, #d7ecdf 74%);
     content: "Who Am I?";
 }
 /* .about .title {
@@ -241,7 +248,7 @@ section .title::after{
 }
 
 /* portfolio section styling */
-.portfolio{
+.portfolio {
     color:#fff;
     background: #111;
 }
@@ -281,9 +288,17 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.portfolio button{
+    color:#fff;
+    background: #111;
+}
 
 /* skills section styling */
+.skills{
+    background: linear-gradient(315deg, #d7ecdf 84%, #ffffff 15%);
+}
 .skills .title::after{
+    background: linear-gradient(315deg, #ffffff 74%, #d7ecdf 0%);
     content: "What I Know";
 }
 .skills .skills-content .column{
@@ -462,10 +477,15 @@ section .title::after{
 
 /* footer section styling */
 footer{
-    background: #fff;
+    display: flex;
+    align-items: baseline;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
     padding: 15px 23px;
+    height: 100%;
+    width: 100%;
     color: #111;
     text-align: center;
+    place-items: center;
 }
 footer span a{
     color: var(--green);
@@ -473,6 +493,92 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+
+/* Social Media Button styling */
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .icon{
+    margin: 0 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span{
+    display: block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i{
+    color: #fff;
+    line-height: 60px;
+    font-size: 25px;
+}
+.wrapper .icon .tooltip{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+    color: #fff;
+    padding: 10px 18px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.icon .tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span{
+    color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .facebook:hover span,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip:before{
+    background: #3B5999;
+}
+.wrapper .twitter:hover span,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip:before{
+    background: #46C1F6;
+}
+.wrapper .github:hover span,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip:before{
+    background: #333;
 }
 
 /* responsive media query start */
@@ -496,62 +602,25 @@ footer span a:hover{
         border-radius: 6px;
         margin-right: 20px;
     }
-    .navbar {
+    .navbar .menu{
         position: fixed;
+        height: 100vh;
         width: 100%;
-        z-index: 999;
-        padding: 30px 0;
-        font-family: 'Ubuntu', sans-serif;
-        transition: all 0.3s ease;
-    }
-    /* .navbar .menu{
-        position: fixed;
-        height: 40vh;
-        width: 15vw;
-        left: 80%;
+        left: -100%;
         top: 0;
-        background: rgba(255, 255, 255, 0.329);
-        text-align: center;
-        padding-top: 50px;
-        transition: all 0.3s ease;
-    } */
-    .navbar .menu li{
-        list-style: none;
-        display: inline-block;
-    }
-    .navbar .menu li a{
-        display: block;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 500;
-        margin-left: 25px;
-        transition: color 0.3s ease;
-    }
-    .navbar .max-width{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    /* .navbar .menu{
-        position: fixed;
-        height: 50vh;
-        width: 15vw;
-        left: 10;
-        top: 0;
-        background: rgba(255, 255, 255, 0.329);
+        background: #111;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
     }
     .navbar .menu li{
-        display: inline;
+        display: block;
     }
     .navbar .menu li a{
-        color: var(--green);
         display: inline-block;
         margin: 20px 0;
-        font-size: 20px;
-    } */
+        font-size: 25px;
+    }
     .home .home-content .text-2{
         font-size: 65px;
     }
@@ -586,26 +655,6 @@ footer span a:hover{
     }
 }
 @media (max-width: 690px) {
-    .navbar .menu{
-        position: fixed;
-        height: 40vh;
-        width: 15vw;
-        left: 80%;
-        top: 0;
-        background: rgba(255, 255, 255, 0.329);
-        text-align: center;
-        padding-top: 50px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu li{
-        display: inline;
-    }
-    .navbar .menu li a{
-        color: var(--green);
-        
-        margin: 20px 0;
-        font-size: 19px;
-    }
     .home img {
         /* display: none; */
         height: 200px;
@@ -631,26 +680,6 @@ footer span a:hover{
     }
 }
 @media (max-width: 500px) {
-    .navbar .menu{
-        position: fixed;
-        height: 40vh;
-        width: 20vw;
-        left: 10;
-        top: 0;
-        background: rgba(255, 255, 255, 0.329);
-        text-align: center;
-        padding-top: 60px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu li{
-        display: inline;
-    }
-    .navbar .menu li a{
-        color: var(--green);
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 18px;
-    }
     .home img {
         /* display: none; */
         height: 100px;

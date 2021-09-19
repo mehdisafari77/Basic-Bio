@@ -23,18 +23,30 @@ var typed = new Typed(".typing-2", {
     loop: true
 });
 
-    // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
-    });
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
-    });
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
+// hamburger menu focus
+var menuToggle = document.querySelector("#menu-toggle");
+var menu = document.querySelector("#menu");
+
+menuToggle.addEventListener("click", function(event) {
+    var menuOpen = menu.checked;
+
+    if(menuOpen) {
+        menu.checked = false;
+    } else {
+        menu.checked = true;
+    }
+});
+if(navOpen) {
+    nav.checked = false;
+    navToggle.setAttribute("aria-expanded", false);
+} else {
+    nav.checked = true;
+    navToggle.setAttribute("aria-expanded", true);
+}
+navToggle.addEventListener("click", function(event) {
+    var navOpen = nav.classList.contains("active");
+    var newNavOpenStatus = !navOpen;
+
+    navToggle.setAttribute("aria-expanded", newNavOpenStatus);
+    nav.classList.toggle("active");
+});
