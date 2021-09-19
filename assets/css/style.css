@@ -127,12 +127,12 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+/* .navbar .menu li a:hover{
     color: var(--green);
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
-}
+} */
 
 /* home section styling */
 .home {
@@ -498,25 +498,23 @@ footer span a:hover{
     }
     .navbar .menu{
         position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
+        height: 50vh;
+        width: 15vw;
+        left: 10;
         top: 0;
-        background: #111;
+        background: rgba(255, 255, 255, 0.329);
         text-align: center;
-        padding-top: 80px;
+        padding-top: 50px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
-        left: 0;
-    }
     .navbar .menu li{
-        display: block;
+        display: inline;
     }
     .navbar .menu li a{
+        color: var(--green);
         display: inline-block;
         margin: 20px 0;
-        font-size: 25px;
+        font-size: 20px;
     }
     .home .home-content .text-2{
         font-size: 65px;
