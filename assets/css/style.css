@@ -66,8 +66,8 @@ section .title::after{
 .portfolio .port-content {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
 
 }
    
@@ -238,7 +238,7 @@ section .title::after{
 }
 .portfolio .title::after{
     background: #111;
-    content: "Click on each to see";
+    content: "Tap On Boxes";
 }
 .portfolio .port-content .card{
     width: calc(33% - 20px);
@@ -462,7 +462,7 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
-    .about .about-content .left img{
+    .home img{
         height: 350px;
         width: 350px;
     }
@@ -581,10 +581,12 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 22px;
     }
+   
     .about .about-content .right .text,
     .skills .skills-content .left .text{
         font-size: 17px;
     }
+
     .contact .right form .fields{
         flex-direction: column;
     }
