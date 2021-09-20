@@ -81,7 +81,7 @@ section .title::after{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 }
    
@@ -140,7 +140,7 @@ section .title::after{
     background-image: linear-gradient(var(--red), rgb(41, 136, 224), rgb(178, 212, 55));
     height: 30vh;
     color: #fff;
-    min-height: 500px;
+    min-height: 700px;
     background-size: 75%;
     font-family: 'ubuntu', sans-serif;
 }
@@ -211,7 +211,7 @@ section .title::after{
     border-radius: 6px;
 }
 .about .about-content .right{
-    width: 55%;
+    width: 100%;
 }
 .about .about-content .right .text{
     font-size: 25px;
