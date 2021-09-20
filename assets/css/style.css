@@ -140,7 +140,7 @@ section .title::after{
     background-image: linear-gradient(var(--red), rgb(41, 136, 224), rgb(178, 212, 55));
     height: 30vh;
     color: #fff;
-    min-height: 700px;
+    min-height: 500px;
     background-size: 75%;
     font-family: 'ubuntu', sans-serif;
 }
