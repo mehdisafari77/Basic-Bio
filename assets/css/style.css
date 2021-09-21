@@ -337,10 +337,22 @@ nav button {
 }
 .projects .projects-content{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap row;
     align-items: center;
     justify-content: center;
 }
+.projects .projects-content .gif-box{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+}
+/* .projects .projects-content .gif-box .gif-1{
+    display: flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content: center;
+} */
 .projects {
     background: linear-gradient(315deg, #ffffff 15%, #d7ecdf 84%);
 }
