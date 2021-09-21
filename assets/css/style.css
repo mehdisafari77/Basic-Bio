@@ -713,8 +713,8 @@ footer .wrapper .github:hover .tooltip:before{
 @media (max-width: 947px){
     .home img {
         /* display: none; */
-        height: 300px;
-        width: 300px;
+        height: 270px;
+        width: 270px;
         object-fit: cover;
         border-radius: 50%;
         margin-right: 20px;
@@ -783,16 +783,16 @@ footer .wrapper .github:hover .tooltip:before{
 @media (max-width: 690px) {
     .home img {
         /* display: none; */
-        height: 200px;
-        width: 200px;
+        height: 170px;
+        width: 170px;
         object-fit: cover;
         border-radius: 50%;
         margin-right: 20px;
     }
     .projects .projects-content .gif-box .gifs .gif-1{
         /* display: none; */
-        height: 230px;
-        width: 230px;
+        height: 220px;
+        width: 220px;
         object-fit: contain;
         border-radius: 10px;
         margin-right: 3px;
@@ -814,11 +814,22 @@ footer .wrapper .github:hover .tooltip:before{
         width: 100%;
     }
 }
+@media (max-width: 570px) {
+    .projects .projects-content .gif-box .gifs .gif-1{
+        /* display: none; */
+        height: 170px;
+        width: 170px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-right: 2px;
+        padding: 2px;
+    }
+}
 @media (max-width: 500px) {
     .home img {
         /* display: none; */
-        height: 100px;
-        width: 100px;
+        height: 140px;
+        width: 140px;
         object-fit: cover;
         border-radius: 50%;
         margin-right: 10px;
