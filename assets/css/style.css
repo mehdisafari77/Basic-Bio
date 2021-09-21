@@ -293,8 +293,15 @@ section .title::after{
 }
 
 /* portfolio projects button popup styling */
-
-  .popup-button {
+.portfolio .gif {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding-bottom: 50px;
+}
+.popup-button {
     font-size: 1em;
     padding: 10px;
     color: #fff;
@@ -303,8 +310,8 @@ section .title::after{
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-  }
-  .overlay {
+}
+.overlay{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -314,16 +321,16 @@ section .title::after{
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  .popup-button:hover {
+}
+.popup-button:hover {
     background: var(--green);
     transform: scale(1.05);
-  }
-  .popup {
+}
+.popup {
     height: 200px;
     width: 200px;
     margin: 70px auto;
@@ -333,13 +340,13 @@ section .title::after{
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
-  }
-  .popup h2 {
+}
+.popup h2 {
     margin-top: 0;
     color: #333;
     font-family: 'Poppins', sans-serif;
-  }
-  .popup .close {
+}
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -348,14 +355,14 @@ section .title::after{
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
+}
   .popup .close:hover {
     color: var(--green);
-  }
-  .popup .content {
+}
+.popup .content {
     max-height: 30%;
     overflow: auto;
-  }
+}
   
 /* skills section styling */
 .skills{
