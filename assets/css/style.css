@@ -265,26 +265,29 @@ section .title::after{
     transition: all 0.3s ease;
     margin: 10px;
 }
-.portfolio .port-content .card:hover .box{
-    transform: scale(1.05);
-}
 .portfolio .port-content .card .box{
     transition: all 0.3s ease;
 }
-.portfolio .port-content .card:hover .box{
-    transform: scale(1.05);
-}
 .portfolio .port-content .card .text{
+    font-family: 'Poppins', sans-serif;
     text-align: left;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .portfolio .port-content .card .text2{
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     font-weight: 150;
+    line-height: normal;
+    margin: 10px 0 7px 0;
+}
+.portfolio .port-content .card a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: normal;
     margin: 10px 0 7px 0;
 }
 .portfolio button{
@@ -292,8 +295,56 @@ section .title::after{
     background: #111;
 }
 
-/* portfolio projects button popup styling */
-.portfolio .gif {
+/* project gif section */
+.projects .title::before{
+    background: #111;
+}
+.projects .title::after{
+    background: #fff;
+    content: "Enjoy!";
+}
+.projects .projects-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.projects {
+    background: linear-gradient(315deg, #ffffff 15%, #d7ecdf 84%);
+}
+.projects .projects-content .gif-box .gifs .gif-1{
+    /* display: none; */
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 10px;
+}
+.projects .projects-content .gif-box{
+    width: calc(33% - 20px);
+    padding: 10px;
+    cursor: pointer;
+    width: auto;
+    border: dashed #fff;
+    background: linear-gradient(115deg, #baf09b 84%, #ffffff 84%);
+    margin: 10px;
+}
+.projects .projects-content .gif-box:hover {
+    transform: scale(1.05);
+}
+.projects .projects-content .gif-box .text{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    margin-top: 10px;
+}
+
+/* portfolio projects button styling */ 
+.portfolio .gif{
+    display: none;
     height: 300px;
     width: 300px;
     object-fit: contain;
@@ -301,7 +352,7 @@ section .title::after{
     margin-right: 10px;
     padding-bottom: 50px;
 }
-.popup-button {
+.repo-button {
     font-size: 1em;
     padding: 10px;
     color: #fff;
@@ -311,65 +362,21 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
-.overlay{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-}
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
-}
-.popup-button:hover {
+.repo-button:hover {
     background: var(--green);
     transform: scale(1.05);
-}
-.popup {
-    height: 200px;
-    width: 200px;
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-}
-.popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: 'Poppins', sans-serif;
-}
-.popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
-  .popup .close:hover {
-    color: var(--green);
-}
-.popup .content {
-    max-height: 30%;
-    overflow: auto;
 }
   
 /* skills section styling */
 .skills{
-    background: linear-gradient(315deg, #d7ecdf 84%, #ffffff 15%);
+    color:#fff;
+    background: #111;
+}
+.skills .title::before{
+    color:#fff;
 }
 .skills .title::after{
-    background: linear-gradient(315deg, #ffffff 74%, #d7ecdf 0%);
+    background: #111;
     content: "What I Know";
 }
 .skills .skills-content .column{
@@ -444,14 +451,14 @@ section .title::after{
 
 /* contact section styling */
 .contact {
-    color:#fff;
-    background: #111;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
 }
 .contact .title::before{
     background: #fff;
 }
 .contact .title::after{
-    background: #111;
+
+    background: linear-gradient(315deg, #ffffff 74%, #d7ecdf 0%);
     content: "Fill It Out";
 }
 .contact .contact-content .column{

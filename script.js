@@ -22,3 +22,6 @@ var typed = new Typed(".typing-2", {
     backSpeed: 60,
     loop: true
 });
+
+
+//  show gifs when mouse over
