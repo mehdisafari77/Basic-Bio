@@ -2,6 +2,9 @@
 
 I created a portfolio for my professional work in order to showcase my skills, who I am, what I do and also include sections to showcase the work in terms of visuals and also links that gives access to my repositories. Also, I have included a contact form for people to be able to contact me, and also social media links to allow following abilities. This website is made to be responsive.
 
+## Site Picture
+![full](https://user-images.githubusercontent.com/75599021/134221444-5355b881-6736-4abd-9dd8-8e3d34ffab53.gif)
+
 ## Technologies Used
 - HTML - used to create elements on the DOM
 - CSS - styles html elements on page
