@@ -166,7 +166,6 @@ nav button {
     color: #fff;
 }
 
-
 /* home section styling */
 .home {
     display: flex;
@@ -340,7 +339,7 @@ nav button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 .projects {
     background: linear-gradient(315deg, #ffffff 15%, #d7ecdf 84%);
@@ -779,6 +778,15 @@ footer .wrapper .github:hover .tooltip:before{
         border-radius: 50%;
         margin-right: 20px;
     }
+    .projects .projects-content .gif-box .gifs .gif-1{
+        /* display: none; */
+        height: 230px;
+        width: 230px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-right: 3px;
+        padding: 5px;
+    }
     .max-width{
         padding: 0 23px;
     }
@@ -804,6 +812,15 @@ footer .wrapper .github:hover .tooltip:before{
         border-radius: 50%;
         margin-right: 10px;
         padding-bottom: 2px;
+    }
+    .projects .projects-content .gif-box .gifs .gif-1{
+        /* display: none; */
+        height: 190px;
+        width: 190px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-right: 3px;
+        padding: 5px;
     }
     .home .home-content .text-2{
         font-size: 45px;
