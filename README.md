@@ -53,6 +53,6 @@ var typed = new Typed(".typing-2", {
 [LinkedIn](https://www.linkedin.com/in/mehdi-safari-992799142/)
 [GitHub](https://github.com/mehdisafari77)
 
-##Acknowledgements
+## Acknowledgements
 - W3 Schools
 - YouTube (Kevin Powell FlexBox Tutorial)
