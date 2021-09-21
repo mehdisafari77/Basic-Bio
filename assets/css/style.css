@@ -85,8 +85,40 @@ section .title::after{
 
 }
    
+/* Navbar dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+nav button {
+      background-color: #3dc93d00;
+      border: none;
+      border-radius: 10%;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #579fda;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content  a:hover {
+    background-color: var(--green);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover button {
+    background-color: rgba(107, 230, 107, 0.568);
+}
+
 /* navbar styling */
-.navbar{
+.dropdown{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -94,7 +126,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+.dropdown.sticky{
     padding: 15px 0;
     background: var(--green);
 }
@@ -103,23 +135,23 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-    color: #fff;
+.dropdown .logo a{
+    color: rgb(98, 145, 233);
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.dropdown .logo a span{
     color: var(--green);
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.dropdown.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+.dropdown .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.dropdown .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -133,6 +165,7 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
+
 
 /* home section styling */
 .home {
