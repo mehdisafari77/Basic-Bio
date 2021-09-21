@@ -319,10 +319,10 @@ section .title::after{
     object-fit: contain;
     border-radius: 10px;
     margin-right: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 .projects .projects-content .gif-box{
-    width: calc(33% - 20px);
+    /* width: calc(33% - 20px); */
     padding: 10px;
     cursor: pointer;
     width: auto;
@@ -343,15 +343,6 @@ section .title::after{
 }
 
 /* portfolio projects button styling */ 
-.portfolio .gif{
-    display: none;
-    height: 300px;
-    width: 300px;
-    object-fit: contain;
-    border-radius: 20px;
-    margin-right: 10px;
-    padding-bottom: 50px;
-}
 .repo-button {
     font-size: 1em;
     padding: 10px;
@@ -684,6 +675,15 @@ footer .wrapper .github:hover .tooltip:before{
         object-fit: cover;
         border-radius: 50%;
         margin-right: 20px;
+    }
+    .projects .projects-content .gif-box .gifs .gif-1{
+        /* display: none; */
+        height: 270px;
+        width: 270px;
+        object-fit: contain;
+        border-radius: 10px;
+        margin-right: 5px;
+        padding: 10px;
     }
     .navbar .menu{
         position: fixed;
