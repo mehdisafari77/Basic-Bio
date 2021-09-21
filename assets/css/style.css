@@ -306,7 +306,7 @@ section .title::after{
 .projects .projects-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 }
 .projects {
