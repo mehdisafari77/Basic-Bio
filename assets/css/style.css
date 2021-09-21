@@ -480,7 +480,6 @@ nav button {
     background: #fff;
 }
 .contact .title::after{
-
     background: linear-gradient(315deg, #ffffff 74%, #d7ecdf 0%);
     content: "Fill It Out";
 }
