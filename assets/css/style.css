@@ -276,22 +276,24 @@ nav button {
 /* portfolio section styling */
 .portfolio {
     font-family: 'Poppins', sans-serif;
-    color:#fff;
-    background: #111;
+    background-image: linear-gradient(var(--red), rgb(41, 136, 224), rgb(178, 212, 55));
+}
+.portfolio .title{
+    color: #fff;
 }
 .portfolio .title::before{
-    background: #fff;
+    background: #111;
 }
 .portfolio .title::after{
-    background: #111;
+    background: #fff;
     content: "Tap On Boxes";
 }
 .portfolio .port-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: linear-gradient(115deg, #baf09b 84%, #ffffff 84%);
     text-align: left;
     border-radius: 6px;
-    border: 2px dashed var(--green);
+    border: 3px dashed var(--red);
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -323,8 +325,23 @@ nav button {
     margin: 10px 0 7px 0;
 }
 .portfolio button{
-    color:#fff;
+    color:#111;
     background: #111;
+}
+/* portfolio projects button styling */ 
+.repo-button {
+    font-size: 1em;
+    padding: 10px;
+    color: #111;
+    border: 3px dashed var(--red);
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.repo-button:hover {
+    background: var(--red);
+    transform: scale(1.05);
 }
 
 /* project gif section */
@@ -370,7 +387,7 @@ nav button {
     padding: 10px;
     cursor: pointer;
     width: auto;
-    border: dashed #fff;
+    border: 3px dashed var(--red);
     background: linear-gradient(115deg, #baf09b 84%, #ffffff 84%);
     margin: 10px;
 }
@@ -385,33 +402,17 @@ nav button {
     margin: 10px 0 7px 0;
     margin-top: 10px;
 }
-
-/* portfolio projects button styling */ 
-.repo-button {
-    font-size: 1em;
-    padding: 10px;
-    color: #fff;
-    border: 2px solid var(--green);
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-.repo-button:hover {
-    background: var(--green);
-    transform: scale(1.05);
-}
   
 /* skills section styling */
 .skills{
     color:#fff;
-    background: #111;
+    background-image: linear-gradient(var(--red), rgb(41, 136, 224), rgb(178, 212, 55));
 }
 .skills .title::before{
-    color:#fff;
+    color:#111;
 }
 .skills .title::after{
-    background: #111;
+    background: #fff;
     content: "What I Know";
 }
 .skills .skills-content .column{
@@ -486,10 +487,10 @@ nav button {
 
 /* contact section styling */
 .contact {
-    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background: linear-gradient(315deg, #ffffff 15%, #d7ecdf 84%);
 }
 .contact .title::before{
-    background: #fff;
+    background: #111;
 }
 .contact .title::after{
     background: linear-gradient(315deg, #ffffff 74%, #d7ecdf 0%);
@@ -517,15 +518,13 @@ nav button {
 .contact .contact-content .row .info{
     margin-left: 30px;
 }
-.contact .contact-content .row i{
-    font-size: 25px;
-    color: var(--green);
-}
 .contact .contact-content .info .head{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #fff;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--green);
 }
 .contact .right form .fields{
     display: flex;
